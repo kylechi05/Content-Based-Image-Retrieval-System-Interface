@@ -10,4 +10,4 @@
 - `/Final Presentation`
     - Contains code for a completed CBIR interface, including preprocessing scripts
 
-*Note: More information for each directory can be found in their respective directory's `README.md` file*
+*Note: Important information for each directory can be found in their respective directory's `README.md` file*
