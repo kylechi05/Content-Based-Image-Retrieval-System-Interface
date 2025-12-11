@@ -84,6 +84,7 @@ async def query_image(method: str = Form(...), cluster: str = Form(...), file: U
             if dist <= tau:
                 results.append({
                     "image_name": img_name,
+                    "cluster": img_to_cluster[img_name],
                     "distance": dist,
                 })
             total_comparisons += 1
@@ -98,6 +99,7 @@ async def query_image(method: str = Form(...), cluster: str = Form(...), file: U
         for img_name, dist in fetched_relevant_images:
             results.append({
                 "image_name": img_name,
+                "cluster": img_to_cluster[img_name],
                 "distance": dist
             })
         total_comparisons = comparisons
